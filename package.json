@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/canos-oss/angularjs-canos/issues"
   },
-  "homepage": "https://github.com/canos-oss/angularjs-canos#readme"
+  "homepage": "https://github.com/canos-oss/angularjs-canos#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-uglify": "^4.0.1"
+  }
 }
