@@ -1,0 +1,23 @@
+{
+  "name": "angularjs-canos",
+  "version": "1.0.0",
+  "description": "common methods for canos-generated angularjs project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canos-oss/angularjs-canos.git"
+  },
+  "keywords": [
+    "angularjs",
+    "canos"
+  ],
+  "author": "harriszhang",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/canos-oss/angularjs-canos/issues"
+  },
+  "homepage": "https://github.com/canos-oss/angularjs-canos#readme"
+}
