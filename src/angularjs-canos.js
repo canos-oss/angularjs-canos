@@ -26,20 +26,20 @@
                 return items;
             }
 
-            methods.setSelected = function (selections, keys, propertySelections, propertyKeys, key) {
+            methods.setSelected = function (scope, selections, keys, propertySelections, propertyKeys, key) {
                 if (selections != null) {
-                    $scope[propertySelections] = selections;
+                    scope[propertySelections] = selections;
                 }
                 if (keys != null) {
-                    $scope[propertyKeys] = keys;
+                    scope[propertyKeys] = keys;
                 }
-                if ($scope[propertySelections] == null || $scope[propertyKeys] == null) {
+                if (scope[propertySelections] == null || scope[propertyKeys] == null) {
                     return;
                 }
-                for (var keyIndex = 0; keyIndex < $scope[propertyKeys].length; keyIndex++) {
-                    for (var selectionIndex = 0; selectionIndex < $scope[propertySelections].length; selectionIndex++) {
-                        if ($scope[propertySelections][selectionIndex][key] == $scope[propertyKeys][keyIndex]) {
-                            $scope[propertySelections][selectionIndex].selected = true;
+                for (var keyIndex = 0; keyIndex < scope[propertyKeys].length; keyIndex++) {
+                    for (var selectionIndex = 0; selectionIndex < scope[propertySelections].length; selectionIndex++) {
+                        if (scope[propertySelections][selectionIndex][key] == scope[propertyKeys][keyIndex]) {
+                            scope[propertySelections][selectionIndex].selected = true;
                             break;
                         }
                     }
