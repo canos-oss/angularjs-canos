@@ -26,13 +26,7 @@
                 return items;
             }
 
-            methods.setSelected = function (scope, selections, keys, propertySelections, propertyKeys, key) {
-                if (selections != null) {
-                    scope[propertySelections] = selections;
-                }
-                if (keys != null) {
-                    scope[propertyKeys] = keys;
-                }
+            methods.setSelected = function (scope, propertySelections, propertyKeys, key) {
                 if (scope[propertySelections] == null || scope[propertyKeys] == null) {
                     return;
                 }
