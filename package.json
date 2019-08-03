@@ -1,6 +1,6 @@
 {
   "name": "angularjs-canos",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "common methods for canos-generated angularjs project.",
   "main": "index.js",
   "scripts": {

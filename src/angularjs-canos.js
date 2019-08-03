@@ -26,6 +26,7 @@
                 return items;
             }
 
+            //适用于复选框，在初始化更新页面的时候，设置checkbox的状态
             methods.setSelected = function (scope, propertySelections, propertyKeys, key) {
                 if (scope[propertySelections] == null || scope[propertyKeys] == null) {
                     return;
@@ -39,6 +40,19 @@
                     }
                 }
             }
+
+            //适用于单选框，在初始化更新页面的时候，设置当当前raiod绑定的值的状态
+            methods.setCurrent = function (scope, propertyName, propertySelections, propertyKey, key) {
+                if (scope[propertySelections] == null || scope[propertyKey] == null) {
+                    return;
+                }
+                for (var selectionIndex = 0; selectionIndex < scope[propertySelections].length; selectionIndex++) {
+                    if (scope[propertySelections][selectionIndex][key] == scope[propertyKey]) {
+                        scope[propertyName] = scope[propertySelections][selectionIndex];
+                        break;
+                    }
+                }
+            }            
 
             return methods;
         };
